@@ -11,10 +11,14 @@ package iFP.pr_daw_p4_puentes_arturo;
 public class Ave extends Animal{
     private boolean cazaFurtiba;
 
-    public Ave(boolean cazaFurtiba, String especie, int peso, String tLesion, String gravedad, String veterianrio, String fAlta, String fLiberacion, boolean fallecido) {
-        super(especie, peso, tLesion, gravedad, veterianrio, fAlta, fLiberacion, fallecido);
+    public Ave(boolean cazaFurtiba, String especie, int peso, String tLesion, String gravedad, String fAlta) {
+        super(especie, peso, tLesion, gravedad, fAlta);
         this.cazaFurtiba = cazaFurtiba;
     }
+
+    
+
+   
 
     public Ave() {
     }

@@ -36,7 +36,7 @@ public class Principal extends javax.swing.JFrame {
         panelAlta.setBounds(318,0,260, 569);
         panelLiberacion.setBounds(318,0,482, 590);
         panelTratamiento.setBounds(318,0,482, 590);
-        panelListado.setBounds(318,0,482, 590);
+        panelListado.setBounds(318,0,845, 590);
         panelBaja.setBounds(318,0,482, 590);
         panelAlta.setVisible(false);
         panelLiberacion.setVisible(false);
@@ -48,6 +48,7 @@ public class Principal extends javax.swing.JFrame {
         add(panelTratamiento);
         add(panelListado);
         add(panelBaja);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -71,6 +72,8 @@ public class Principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setLocation(new java.awt.Point(0, 0));
         setUndecorated(true);
         setResizable(false);
 
@@ -233,6 +236,7 @@ public class Principal extends javax.swing.JFrame {
         panelListado.setVisible(false);
         panelBaja.setVisible(false);
         panelAlta.InitFecha();
+        setLocationRelativeTo(null);
     }//GEN-LAST:event_AltaActionPerformed
 
     private void TratamientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TratamientoActionPerformed
@@ -242,6 +246,7 @@ public class Principal extends javax.swing.JFrame {
         panelTratamiento.setVisible(true);
         panelListado.setVisible(false);
         panelBaja.setVisible(false);
+        setLocationRelativeTo(null);
     }//GEN-LAST:event_TratamientoActionPerformed
 
     private void LiberacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LiberacionActionPerformed
@@ -251,6 +256,7 @@ public class Principal extends javax.swing.JFrame {
         panelTratamiento.setVisible(false);
         panelListado.setVisible(false);
         panelBaja.setVisible(false);
+        setLocationRelativeTo(null);
     }//GEN-LAST:event_LiberacionActionPerformed
 
     private void ListadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListadoActionPerformed
@@ -260,6 +266,7 @@ public class Principal extends javax.swing.JFrame {
         panelTratamiento.setVisible(false);
         panelListado.setVisible(true);
         panelBaja.setVisible(false);
+        setLocationRelativeTo(null);
     }//GEN-LAST:event_ListadoActionPerformed
 
     private void BajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BajaActionPerformed
@@ -269,6 +276,7 @@ public class Principal extends javax.swing.JFrame {
         panelTratamiento.setVisible(false);
         panelListado.setVisible(false);
         panelBaja.setVisible(true);
+        setLocationRelativeTo(null);
     }//GEN-LAST:event_BajaActionPerformed
 
     private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed

@@ -13,20 +13,20 @@ public class Animal {
     private int peso;
     private String tLesion;
     private String gravedad;
-    private String veterianrio;
+    private String vetLiberacion;    
+    private String vetFallecimiento;
     private String fAlta;
     private String fLiberacion;
+    private String fFallecimiento;
     private boolean fallecido;
+    private String tratamieno;
 
-    public Animal(String especie, int peso, String tLesion, String gravedad, String veterianrio, String fAlta, String fLiberacion, boolean fallecido) {
+    public Animal(String especie, int peso, String tLesion, String gravedad, String fAlta) {
         this.especie = especie;
         this.peso = peso;
         this.tLesion = tLesion;
         this.gravedad = gravedad;
-        this.veterianrio = veterianrio;
         this.fAlta = fAlta;
-        this.fLiberacion = fLiberacion;
-        this.fallecido = fallecido;
     }
 
     public Animal() {
@@ -34,6 +34,14 @@ public class Animal {
     
     public String getEspecie() {
         return especie;
+    }
+
+    public String getTratamieno() {
+        return tratamieno;
+    }
+
+    public void setTratamieno(String tratamieno) {
+        this.tratamieno = tratamieno;
     }
 
     public void setEspecie(String especie) {
@@ -64,12 +72,28 @@ public class Animal {
         this.gravedad = gravedad;
     }
 
-    public String getVeterianrio() {
-        return veterianrio;
+    public String getVetLiberacion() {
+        return vetLiberacion;
     }
 
-    public void setVeterianrio(String veterianrio) {
-        this.veterianrio = veterianrio;
+    public void setVetLiberacion(String vetLiberacion) {
+        this.vetLiberacion = vetLiberacion;
+    }
+
+    public String getVetFallecimiento() {
+        return vetFallecimiento;
+    }
+
+    public void setVetFallecimiento(String vetFallecimiento) {
+        this.vetFallecimiento = vetFallecimiento;
+    }
+
+    public String getfFallecimiento() {
+        return fFallecimiento;
+    }
+
+    public void setfFallecimiento(String fFallecimiento) {
+        this.fFallecimiento = fFallecimiento;
     }
 
     public String getfAlta() {
@@ -98,7 +122,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" + "especie=" + especie + ", peso=" + peso + ", tLesion=" + tLesion + ", gravedad=" + gravedad + ", veterianrio=" + veterianrio + ", fAlta=" + fAlta + ", fLiberacion=" + fLiberacion + ", fallecido=" + fallecido + '}';
+        return "Animal{" + "especie=" + especie + ", peso=" + peso + ", tLesion=" + tLesion + ", gravedad=" + gravedad + ", veterianrio=" + vetLiberacion + ", fAlta=" + fAlta + ", fLiberacion=" + fLiberacion + ", fallecido=" + fallecido + '}';
     }
     
 }

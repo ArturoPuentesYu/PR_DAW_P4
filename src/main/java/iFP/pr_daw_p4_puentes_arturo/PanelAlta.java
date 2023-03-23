@@ -19,7 +19,7 @@ public class PanelAlta extends javax.swing.JPanel {
     public PanelAlta() {
         initComponents();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -50,17 +50,22 @@ public class PanelAlta extends javax.swing.JPanel {
         DarAlta = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(246, 251, 244));
+        setForeground(new java.awt.Color(75, 134, 115));
+        setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         setMaximumSize(new java.awt.Dimension(260, 556));
 
-        Titulo.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        Titulo.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
         Titulo.setForeground(new java.awt.Color(75, 134, 115));
         Titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Titulo.setText("Alta");
         Titulo.setToolTipText("");
         Titulo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(75, 134, 115));
         jLabel1.setText("Clase Animal:");
 
+        jListClases.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jListClases.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Ave", "Mamífero", "Reptil" };
             public int getSize() { return strings.length; }
@@ -73,32 +78,44 @@ public class PanelAlta extends javax.swing.JPanel {
         });
         ClasesAnimales.setViewportView(jListClases);
 
+        jLabelEspecie.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabelEspecie.setForeground(new java.awt.Color(75, 134, 115));
         jLabelEspecie.setText("Especie:");
 
+        Especie.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Especie.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 EspecieKeyTyped(evt);
             }
         });
 
+        jLabelPeso.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabelPeso.setForeground(new java.awt.Color(75, 134, 115));
         jLabelPeso.setText("Peso:");
 
+        Peso.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Peso.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 PesoKeyTyped(evt);
             }
         });
 
+        jLabelLesion.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabelLesion.setForeground(new java.awt.Color(75, 134, 115));
         jLabelLesion.setText("Lesion:");
 
+        Lesion.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Lesion.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 LesionKeyTyped(evt);
             }
         });
 
+        jLabelGravedad.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabelGravedad.setForeground(new java.awt.Color(75, 134, 115));
         jLabelGravedad.setText("Gravedad:");
 
+        jListGravedad.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jListGravedad.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Baja", "Media", "Urgente" };
             public int getSize() { return strings.length; }
@@ -106,12 +123,21 @@ public class PanelAlta extends javax.swing.JPanel {
         });
         jScrollPaneGravedad.setViewportView(jListGravedad);
 
+        jLabelVet.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabelVet.setForeground(new java.awt.Color(75, 134, 115));
         jLabelVet.setText("Veterinario:");
 
+        Veterinario.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Veterinario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Juan", "Roberto", "Carlos" }));
 
+        jLabelFecha.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabelFecha.setForeground(new java.awt.Color(75, 134, 115));
         jLabelFecha.setText("Fecha:");
 
+        FechaDeAlta.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+
+        DatoExtra.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        DatoExtra.setForeground(new java.awt.Color(75, 134, 115));
         DatoExtra.setText("Selecciona una clase de animal");
 
         DarAlta.setBackground(new java.awt.Color(245, 223, 153));
@@ -130,19 +156,19 @@ public class PanelAlta extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(99, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(DarAlta, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
+                        .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                             .addComponent(jLabelGravedad)
                             .addComponent(jScrollPaneGravedad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1)
                             .addComponent(ClasesAnimales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabelVet, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(Veterinario, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -151,19 +177,23 @@ public class PanelAlta extends javax.swing.JPanel {
                             .addContainerGap()
                             .addComponent(DatoExtra))
                         .addGroup(javax.swing.GroupLayout.Alignment.CENTER, layout.createSequentialGroup()
-                            .addGap(6, 6, 6)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabelLesion)
-                                .addComponent(jLabelPeso)
-                                .addComponent(jLabelEspecie, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabelFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(6, 6, 6)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabelLesion)
+                                        .addComponent(jLabelPeso)
+                                        .addComponent(jLabelEspecie)))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(4, 4, 4)
+                                    .addComponent(jLabelFecha)))
                             .addGap(18, 18, 18)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(Especie)
                                 .addComponent(Peso)
                                 .addComponent(FechaDeAlta, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                                 .addComponent(Lesion)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Titulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -213,22 +243,22 @@ public class PanelAlta extends javax.swing.JPanel {
                 .addComponent(DatoExtra)
                 .addGap(18, 18, 18)
                 .addComponent(DarAlta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         Especie.getAccessibleContext().setAccessibleName("");
     }// </editor-fold>//GEN-END:initComponents
 
     private void EspecieKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_EspecieKeyTyped
-        IntroLetras(evt);
+        Gestor.IntroLetras(evt);
     }//GEN-LAST:event_EspecieKeyTyped
 
     private void LesionKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_LesionKeyTyped
-        IntroLetras(evt);
+        Gestor.IntroLetras(evt);
     }//GEN-LAST:event_LesionKeyTyped
 
     private void PesoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PesoKeyTyped
-        IntroNumeros(evt);
+        Gestor.IntroNumeros(evt);
     }//GEN-LAST:event_PesoKeyTyped
 
     private void jListClasesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jListClasesMouseClicked
@@ -245,34 +275,20 @@ public class PanelAlta extends javax.swing.JPanel {
 
     private void DarAltaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DarAltaActionPerformed
         if (jListClases.getSelectedIndex() == 0 ) {
-            Ave e = new Ave(DatoExtra.isSelected(),Especie.getText(),Integer.parseInt(Peso.getText()),Lesion.getText(),jListGravedad.getSelectedValue(),String.valueOf(Veterinario.getSelectedItem()),FechaDeAlta.getText(),"",false);
+            Ave e = new Ave(DatoExtra.isSelected(),Especie.getText(),Integer.parseInt(Peso.getText()),Lesion.getText(),jListGravedad.getSelectedValue(),FechaDeAlta.getText());
             Principal.addListado(e);
         }
         if (jListClases.getSelectedIndex() == 1 ) {
-            Mamifero e = new Mamifero(DatoExtra.isSelected(),Especie.getText(),Integer.parseInt(Peso.getText()),Lesion.getText(),jListGravedad.getSelectedValue(),String.valueOf(Veterinario.getSelectedItem()),FechaDeAlta.getText(),"",false);
+            Mamifero e = new Mamifero(DatoExtra.isSelected(),Especie.getText(),Integer.parseInt(Peso.getText()),Lesion.getText(),jListGravedad.getSelectedValue(),FechaDeAlta.getText());
             Principal.addListado(e);
         }
         if (jListClases.getSelectedIndex() == 2 ) {
-            Reptil e = new Reptil(DatoExtra.isSelected(),Especie.getText(),Integer.parseInt(Peso.getText()),Lesion.getText(),jListGravedad.getSelectedValue(),String.valueOf(Veterinario.getSelectedItem()),FechaDeAlta.getText(),"",false);
+            Reptil e = new Reptil(DatoExtra.isSelected(),Especie.getText(),Integer.parseInt(Peso.getText()),Lesion.getText(),jListGravedad.getSelectedValue(),FechaDeAlta.getText());
             Principal.addListado(e);
         }
     }//GEN-LAST:event_DarAltaActionPerformed
 
-    private static void IntroLetras(KeyEvent evt) {
-        char c = evt.getKeyChar();
-        if (!Character.isLetter(c)) {
-            evt.consume();
-        }
-    }
-    
-    private static void IntroNumeros(KeyEvent evt) {
-        char c = evt.getKeyChar();
-        if (!Character.isDigit(c)) {
-            evt.consume();
-        }
-    }
-
-    public void InitFecha(){
+public void InitFecha(){
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
         Date date = new Date();   
         FechaDeAlta.setText(formato.format(date));

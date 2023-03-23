@@ -29,6 +29,7 @@ public class PanelBaja extends javax.swing.JPanel {
         Titulo = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(246, 251, 244));
+        setForeground(new java.awt.Color(75, 134, 115));
 
         Titulo.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         Titulo.setForeground(new java.awt.Color(75, 134, 115));
